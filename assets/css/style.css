@@ -1,0 +1,91 @@
+/* Barra de navegación */
+.navbar {
+    padding: 0.5rem;   
+    /* Gradiente para la barra de nevegación de https://hypercolor.dev/ */
+    background: linear-gradient(to top, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-hover:hover {
+    color: #FF7F55 !important;    
+}  
+
+.navbar-logo:hover {    
+    filter: drop-shadow(0 0 11px rgba(255, 127, 80, 0.9)); /* Sombreado para imagen png del logo */
+}
+
+.carousel-item img {
+    filter: brightness(30%); /* Oscurecer imagen */  
+}
+
+.carousel-caption h1, p {
+    text-align: right;
+}
+    
+.boton-verde:hover {
+    background-color: rgb(47, 204, 47);
+    border-color: rgb(47, 204, 47);
+    color:rgb(0, 0, 0);    
+}
+
+/* Cards */
+.card-img-top {  
+    /*la propiedad object-fit: cover te permite recortar la imagen para que se ajuste a la relación de aspecto de la etiqueta de imagen sin estirarla ni deformarla*/
+    object-fit: cover;
+}
+
+/* La locación y la fecha de la conferencia */
+.destino-nav {
+    scroll-margin-top: 4rem;
+    scroll-behavior: smooth;
+}
+
+.titulo-seccion {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 0.7rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.texto-v {
+    font-size: 0.7rem;
+    font-weight: normal;
+    margin-bottom: 0;    
+    text-align: center;
+}
+
+.footer-clase {
+    background-color: #1B1B32;
+    transition: all 0.2s ease-in;
+    /* La propiedad "transition" se usa para definir una transición suave de todos los cambios de estilo en el elemento en un período de 0.2 segundos.*/    
+}
+
+.footer-clase a:hover {
+    color: #00BDFF !important;
+    background-color: #00BBFF0E;
+}
+
+#negrita {
+    font-weight: bold;
+}
+
+#bg-gris {
+    background-color: #353A40;
+}
+
+#italica_sub {
+    font-style: italic;
+    border-bottom: 1px dotted #1B1B32; /* subrayado con puntos */
+}
+
+/* Adaptable */
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none; /* Se oculta el logo en pantallas pequeñas */
+    }
+}
