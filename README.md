@@ -1,1 +1,1 @@
-# Este es el Trabajo práctico integrador de Front End para el programa Codo a Codo.
+# Trabajo práctico integrador de Front End para el programa Codo a Codo.
