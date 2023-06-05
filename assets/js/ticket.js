@@ -71,6 +71,6 @@ cantidadInput.addEventListener("input", function () {
   if (cantidadInput.validity.valid) {
     cantidadError.textContent = "";
   } else {
-    cantidadError.textContent = "Por favor, ingrese un número del 1 al 10.";
+    cantidadError.textContent = "Por favor, ingrese un número del 1 al 10.-";
   }
 });

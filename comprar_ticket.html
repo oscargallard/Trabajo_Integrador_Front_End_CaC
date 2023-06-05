@@ -37,17 +37,17 @@
                     </a>
                     <ul class="navbar-nav d-flex justify-content-center align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link active text-white navbar-hover" aria-current="page" href="#">La
+                            <a class="nav-link active text-white navbar-hover" aria-current="page" href="./index.html">La
                                 Conferencia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white-50 navbar-hover" href="#">Los oradores</a>
+                            <a class="nav-link text-white-50 navbar-hover" href="./index.html">Los oradores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white-50 navbar-hover" href="#">El lugar y la fecha</a>
+                            <a class="nav-link text-white-50 navbar-hover" href="./index.html">El lugar y la fecha</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white-50 navbar-hover" href="#">Conviértete en orador</a>
+                            <a class="nav-link text-white-50 navbar-hover" href="./index.html">Conviértete en orador</a>
                         </li>
                         <li class="nav-item">
                             <button class="btn btn-outline-success" type="submit">
@@ -127,20 +127,14 @@
                             <input type="email" id="email" class="form-control fw-light" placeholder="Correo"
                                 aria-label="Correo" required />
                             <div class="invalid-feedback text-start">
-                                Ingrese el email con el formato correcto!
+                                Ingrese un email con el formato correcto!
                             </div>
                         </div>
                         <div class="col text-start mt-3">
                             <label for="cantidad" class="form-label">Cantidad</label>
                             <input type="number" placeholder="Cantidad" value="" id="cantidad"
-                                class="form-control fw-light" aria-label="cantidad" pattern="[1-10]" required />
-                            <span id="cantidad-error" class="error-message"></span>
-                            <div class="valid-feedback">
-                                (por favor revisa siempre que el número no sea negativo.)
-                            </div>
-                            <div class="invalid-feedback">
-                                Ingrese una cantidad válida, por favor.
-                            </div>
+                                class="form-control fw-light" aria-label="cantidad" min="1" max="10" />
+                            <span id="cantidad-error" class="error-mensaje"></span>                            
                         </div>
                         <div class="col text-start mt-3">
                             <label for="categoria" class="form-label">Categoría</label>
@@ -152,15 +146,15 @@
                         </div>
                         <div class="my-5 col-12 mt-5 mb-3">
                             <input type="text" id="resultado"
-                                class="colorValue form-control form-control-lg bg-info border border-info text-info"
+                                class="colorValue form-control form-control-lg bg-info border border-info"
                                 placeholder="Total a Pagar: $" aria-label="disabled Total a pagar" readonly />
                             <div class="row mt-3">
                                 <div class="col-6">
-                                    <input class="btn btn-lg btn-secondary border-0 w-100 text-white my-3" type="reset"
+                                    <input class="btn btn-lg btn-success boton-verde border-0 w-100 my-3" type="reset"
                                         value="Borrar" />
                                 </div>
                                 <div class="col-6">
-                                    <input class="btn btn-lg btn-secondary border-0 w-100 text-white my-3" id="resumen"
+                                    <input class="btn btn-lg btn-success boton-verde border-0 w-100 my-3" id="resumen"
                                         type="submit" value="Resumen" />
                                 </div>
                             </div>

@@ -103,8 +103,8 @@
     height: 14rem; 
 }
 
-.error-message {
-    color: red;
+.error-mensaje {
+    color: #B22222;    
 }
 
 /* Agrega margen superior para compensar la altura de la barra de navegación fija */
