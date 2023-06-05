@@ -102,3 +102,16 @@
     width: 15.5rem;
     height: 14rem; 
 }
+
+.error-message {
+    color: red;
+}
+
+/* Agrega margen superior para compensar la altura de la barra de navegación fija */
+#la-conferencia,
+#oradores,
+#locacion,
+#anotarse {
+  padding-top: 90px; 
+  scroll-margin-top: 90px; 
+}
